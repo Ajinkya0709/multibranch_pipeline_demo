@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+		echo "Branch Name: ${env.BRANCH_NAME}"
+		    
                 echo 'Building..'
             }
         }
